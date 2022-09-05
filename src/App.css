@@ -1,38 +1,68 @@
-.App {
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* mobile - default */
+@font-face {
+  font-family: "inter-semi-bold";
+  src: url("assets/inter/Inter-SemiBold.otf") format("truetype");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  box-sizing: border-box; /*lets include the border and padding as well to determine the width*/
+
+  /* set overall font */
+  font-size: 1.3rem;
+  font-family: "inter-semi-bold";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+*,
+*::before,
+*::after {
+  box-sizing: inherit; /* always border-box - easier to calculate */
+}
+
+body {
+  /*some browsers have padding some margins */
+  margin: 0;
+  padding: 0;
+  background-color:#F8F9FA;
+}
+
+li {
+  list-style: none;
+}
+
+.top-section {
+  /* transform: rotate(15deg); */
+}
+
+.top-banner-pink {
+  height: 25vh;
+  /*clip-path: polygon(0 0, 100% 0, 100% 100%, 0 30%);*/ 
+  background-size: repeat;
+  background-image: url("./img/pink-bg-with-thunder.png");
+}
+
+.rotate-this{
+  transform: rotate(15deg);
+}
+
+.clip-this {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 33%);
+}
+/* for tablets */
+
+@media (min-width: 640px) {
+  .top-banner-pink {
+    height: 40vh;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* for desktops */
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media (min-width: 1024px) {
+  .top-banner-pink {
+    height: 50vh;
   }
 }
