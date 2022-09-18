@@ -20,7 +20,7 @@ const Two_stripes_blue_pink_right = styled.img`
   alt: "two-stripes-blue-pink";
   position: absolute;
   z-index: 9;
-  right: -2%;
+  right: 1%;
   top: 84.5%;
   width: 15vw;
   transform: rotate(192deg);

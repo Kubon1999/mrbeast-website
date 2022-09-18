@@ -4,6 +4,7 @@ import { keyframes } from "styled-components";
 import mrbeast_logo_panther from "../img/mrbeast-logo-panther.png";
 import mrbeast_text_blue_big from "../img/mrbeast-text-big.svg";
 import pink_background_with_thunder from "../img/pink-bg-with-thunder.png";
+import pink_background_with_thunder_looped from "../img/pink-bg-with-thunder-looped.png";
 import TopBannerDetails from "./TopBannerDetails";
 
 const MrBeastLogoPanther = styled.img`
@@ -33,22 +34,34 @@ MrBeastTextBigBlue.defaultProps = {
   src: mrbeast_text_blue_big,
 };
 
-/* animation for background */
-const rotate = keyframes`
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
-`;
-
 const PinkBackgroundWithThunder = styled.div`
   height: 30vw;
   background-size: cover;
   background-image: url(${pink_background_with_thunder});
+  visibility: hidden;
 `;
+
+/* animation for background */
+const scroll = keyframes`
+  100% { transform: translateY(20%); }
+  
+`;
+
+const PinkBackgroundWithThunderAnimation = styled.img`
+  alt: "animated pink thunder background going from top to bottom";
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  top: -100%;
+  animation-name: ${scroll};
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+`;
+
+PinkBackgroundWithThunderAnimation.defaultProps = {
+  src: pink_background_with_thunder_looped,
+};
 
 const TopBanner = () => {
   return (
@@ -57,6 +70,7 @@ const TopBanner = () => {
         {/* we need to clip the mrbeast and pink thunder background behind the white foreground */}
         <div className="clip-this relative">
           <PinkBackgroundWithThunder></PinkBackgroundWithThunder>
+          <PinkBackgroundWithThunderAnimation></PinkBackgroundWithThunderAnimation>
           <MrBeastTextBigBlue />
         </div>
         <MrBeastLogoPanther />
