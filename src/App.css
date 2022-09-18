@@ -2,18 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* mobile - default */
 @font-face {
-  font-family: "inter-semi-bold";
-  src: url("assets/inter/Inter-SemiBold.otf") format("truetype");
+  font-family: "Inter";
+  src: url("assets/inter/Inter-Regular.otf") format("truetype");
 }
+
+
 
 html {
   box-sizing: border-box; /*lets include the border and padding as well to determine the width*/
 
   /* set overall font */
   font-size: 1.3rem;
-  font-family: "inter-semi-bold";
+  font-family: "Inter";
 }
 
 *,
@@ -35,6 +38,10 @@ li {
 
 .top-section {
   /* transform: rotate(15deg); */
+}
+
+.header-text{
+  font-family: "Inter-bold";
 }
 
 .top-banner-pink {
@@ -66,3 +73,4 @@ li {
     height: 50vh;
   }
 }
+

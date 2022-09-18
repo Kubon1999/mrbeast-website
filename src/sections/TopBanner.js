@@ -1,17 +1,19 @@
 //import stlled components library
 import styled from "styled-components";
+import { keyframes } from "styled-components";
 import mrbeast_logo_panther from "../img/mrbeast-logo-panther.png";
 import mrbeast_text_blue_big from "../img/mrbeast-text-big.svg";
 import pink_background_with_thunder from "../img/pink-bg-with-thunder.png";
+import TopBannerDetails from "./TopBannerDetails";
 
 const MrBeastLogoPanther = styled.img`
   alt: "mrbeast-logo-panther";
   position: absolute;
   z-index: 10;
-  left: 9%;
-  top: 9%;
-  width: 50vw;
-  transform: rotate(-3.1deg);
+  left: 13.5%;
+  top: 20%;
+  width: 35vw;
+  transform: rotate(-4.2deg);
 `;
 
 MrBeastLogoPanther.defaultProps = {
@@ -31,6 +33,17 @@ MrBeastTextBigBlue.defaultProps = {
   src: mrbeast_text_blue_big,
 };
 
+/* animation for background */
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
 const PinkBackgroundWithThunder = styled.div`
   height: 30vw;
   background-size: cover;
@@ -39,20 +52,17 @@ const PinkBackgroundWithThunder = styled.div`
 
 const TopBanner = () => {
   return (
-    <section className="top-section relative">
-      <div className="clip-this relative">
-        <PinkBackgroundWithThunder></PinkBackgroundWithThunder>
-        <MrBeastTextBigBlue />
-      </div>
-      <MrBeastLogoPanther />
-
-      {/* <ul className="flex flex-row gap-20 justify-end text-white p-5 pr-20">
-          <li>Videos</li>
-          <li>About</li>
-          <li>Creators</li>
-          <li>Contact</li>
-        </ul> */}
-    </section>
+    <>
+      <section className="top-section relative">
+        {/* we need to clip the mrbeast and pink thunder background behind the white foreground */}
+        <div className="clip-this relative">
+          <PinkBackgroundWithThunder></PinkBackgroundWithThunder>
+          <MrBeastTextBigBlue />
+        </div>
+        <MrBeastLogoPanther />
+        <TopBannerDetails />
+      </section>
+    </>
   );
 };
 
