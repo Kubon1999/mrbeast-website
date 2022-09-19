@@ -1,8 +1,8 @@
 import "./App.css";
 import TopBanner from "./sections/TopBanner";
 import PageNavbar from "./sections/PageNavbar.js";
-import TopBannerDetails from "./sections/TopBannerDetails";
 import FontStyles from "./utils/FontStyles";
+import About from "./sections/About/About";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
       <FontStyles></FontStyles>
       <PageNavbar></PageNavbar>
       <TopBanner></TopBanner>
+      <About></About>
     </div>
   );
 }
