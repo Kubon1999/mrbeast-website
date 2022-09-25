@@ -17,12 +17,11 @@ import CreatorProfile from "./CreatorProfile";
 import { useEffect, useState } from "react";
 
 const CreatorsContainer = styled.div`
-  margin-top: 8vw;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 0%;
   justify-content: center;
+  margin-top: 5vw;
 `;
 
 const CreatorsProfiles = () => {

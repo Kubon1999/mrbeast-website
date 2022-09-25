@@ -4,6 +4,7 @@ import PageNavbar from "./sections/PageNavbar.js";
 import FontStyles from "./utils/FontStyles";
 import About from "./sections/About/About";
 import Creators from "./sections/Creators/Creators";
+import Footer from "./sections/Footer/Footer";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <TopBanner></TopBanner>
       <About></About>
       <Creators></Creators>
+      <Footer></Footer>
     </div>
   );
 }

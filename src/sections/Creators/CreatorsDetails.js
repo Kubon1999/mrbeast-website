@@ -37,7 +37,7 @@ const Two_stripes_blue_pink_1 = styled.img`
   position: absolute;
   z-index: 5;
   left: -10%;
-  top: 25%;
+  bottom: 0%;
   width: 25vw;
   transform: rotate(20deg);
 `;
@@ -65,7 +65,7 @@ const Yt_button = styled.img`
   position: absolute;
   z-index: 20;
   left: 47%;
-  top: 20%;
+  top: 45%;
   width: 10vw;
 `;
 
