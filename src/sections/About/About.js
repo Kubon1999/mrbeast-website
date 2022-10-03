@@ -10,6 +10,7 @@ const AboutDiv = styled.div`
   background-color: #44d6ff;
   clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 77%);
   position: relative;
+  overflow: hidden;
 `;
 
 const TextContainer = styled.div`
