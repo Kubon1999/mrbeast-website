@@ -69,8 +69,9 @@ const CreatorsProfiles = () => {
     for (let i = 0; i < rows; i++) {
       for (let i = 0; i < columns; i++) {
         let randomNumber = Math.floor(Math.random() * profileImages.length);
-        let randomImage = profileImagesPaths[randomNumber];
+        let randomImage = profileImages[randomNumber];
         temp.push(randomImage);
+        console.log(temp);
         setProfileImagesPathsState(temp);
       }
     }
@@ -83,6 +84,9 @@ const CreatorsProfiles = () => {
             <CreatorProfile img={profilePicture} key={key} />
           ))
         : null}
+      {/* {profileImages.map((profilePicture, key) => (
+        <CreatorProfile img={profilePicture} key={key} />
+      ))} */}
     </CreatorsContainer>
   );
 };
