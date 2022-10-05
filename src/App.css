@@ -58,6 +58,7 @@ li {
 .clip-this {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 33%);
 }
+
 /* for tablets */
 
 @media (min-width: 640px) {

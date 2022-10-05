@@ -80,9 +80,17 @@ const CreatorsProfiles = () => {
   return (
     <CreatorsContainer>
       {profileImagesPathsState
-        ? profileImagesPathsState.map((profilePicture, key) => (
-            <CreatorProfile img={profilePicture} key={key} />
-          ))
+        ? profileImagesPathsState.map((profilePicture, key) => {
+            var randomNumber2 = Math.random() * 1000;
+
+            return (
+              <CreatorProfile
+                img={profilePicture}
+                key={key}
+                style={{ "--i": key }}
+              />
+            );
+          })
         : null}
       {/* {profileImages.map((profilePicture, key) => (
         <CreatorProfile img={profilePicture} key={key} />
