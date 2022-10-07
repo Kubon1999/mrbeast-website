@@ -75,3 +75,20 @@ li {
   }
 }
 
+.creator-profile{
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-delay: calc(var(--i) * 0.012s);
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -5,21 +5,13 @@ const CreatorImage = styled.img`
   width: 4vw;
   margin: 0.5vw;
   border-radius: 50%;
-
-  animation: fadeIn 1s;
-
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
 `;
 
-const CreatorProfile = ({ img }) => {
-  return <CreatorImage src={img} />;
+const CreatorProfile = ({ img, id }) => {
+  console.log(id);
+  return (
+    <CreatorImage src={img} style={{ "--i": id }} className="creator-profile" />
+  );
 };
 
 export default CreatorProfile;

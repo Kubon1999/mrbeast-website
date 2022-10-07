@@ -83,13 +83,7 @@ const CreatorsProfiles = () => {
         ? profileImagesPathsState.map((profilePicture, key) => {
             var randomNumber2 = Math.random() * 1000;
 
-            return (
-              <CreatorProfile
-                img={profilePicture}
-                key={key}
-                style={{ "--i": key }}
-              />
-            );
+            return <CreatorProfile img={profilePicture} key={key} id={key} />;
           })
         : null}
       {/* {profileImages.map((profilePicture, key) => (
