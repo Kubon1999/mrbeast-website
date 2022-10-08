@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { useEffect, useState } from "react";
+import { Waypoint } from "react-waypoint";
 
 const CreatorImage = styled.img`
   alt: "yt-creator";
@@ -8,9 +10,24 @@ const CreatorImage = styled.img`
 `;
 
 const CreatorProfile = ({ img, id }) => {
-  console.log(id);
+  const [appear, setAppear] = useState(false);
+
+  useEffect(() => {
+    console.log("waypoint triggered");
+  }, [appear]);
+
   return (
-    <CreatorImage src={img} style={{ "--i": id }} className="creator-profile" />
+    <>
+      {appear && (
+        <CreatorImage
+          src={img}
+          alt="yt-creator"
+          className="creator-profile"
+          style={{ "--i": id }}
+        />
+      )}
+      <Waypoint onEnter={() => setAppear(true)} />
+    </>
   );
 };
 
