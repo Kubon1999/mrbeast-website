@@ -60,7 +60,7 @@ const CreatorsProfiles = () => {
   ];
 
   const rows = 4;
-  const columns = 20;
+  const columns = 22;
 
   const [profileImagesPathsState, setProfileImagesPathsState] = useState();
 

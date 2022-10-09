@@ -4,7 +4,7 @@ import { Waypoint } from "react-waypoint";
 
 const CreatorImage = styled.img`
   alt: "yt-creator";
-  width: 4vw;
+  width: 3.4vw;
   margin: 0.5vw;
   border-radius: 50%;
 `;
