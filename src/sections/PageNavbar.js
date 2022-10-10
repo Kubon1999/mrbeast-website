@@ -2,7 +2,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import styled from "styled-components";
 
 const StyledNavBar = styled.ul`
-  margin: 15%;
+  margin: 1.5vw;
   display: flex;
   justify-content: flex-end;
   gap: 50%;
