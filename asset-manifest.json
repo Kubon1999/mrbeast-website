@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mrbeast-website/static/css/main.59c7b0ea.css",
-    "main.js": "/mrbeast-website/static/js/main.a5d71e47.js",
+    "main.css": "/mrbeast-website/static/css/main.56f9ddb2.css",
+    "main.js": "/mrbeast-website/static/js/main.8ce2bd2c.js",
     "static/js/787.22b5f9ad.chunk.js": "/mrbeast-website/static/js/787.22b5f9ad.chunk.js",
     "static/media/pink-bg-with-thunder-looped.png": "/mrbeast-website/static/media/pink-bg-with-thunder-looped.4b2117bfe41ae5fea0ca.png",
     "static/media/pink-bg-with-thunder.png": "/mrbeast-website/static/media/pink-bg-with-thunder.0ebac4b500f4053b25ee.png",
@@ -34,12 +34,12 @@
     "index.html": "/mrbeast-website/index.html",
     "static/media/two-stripes-blue-pink.svg": "/mrbeast-website/static/media/two-stripes-blue-pink.745d19b68269341953fd55dbc746b236.svg",
     "static/media/stripes-from-right-to-center.svg": "/mrbeast-website/static/media/stripes-from-right-to-center.c5880e30573fcd14e9ccce167921803b.svg",
-    "main.59c7b0ea.css.map": "/mrbeast-website/static/css/main.59c7b0ea.css.map",
-    "main.a5d71e47.js.map": "/mrbeast-website/static/js/main.a5d71e47.js.map",
+    "main.56f9ddb2.css.map": "/mrbeast-website/static/css/main.56f9ddb2.css.map",
+    "main.8ce2bd2c.js.map": "/mrbeast-website/static/js/main.8ce2bd2c.js.map",
     "787.22b5f9ad.chunk.js.map": "/mrbeast-website/static/js/787.22b5f9ad.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.59c7b0ea.css",
-    "static/js/main.a5d71e47.js"
+    "static/css/main.56f9ddb2.css",
+    "static/js/main.8ce2bd2c.js"
   ]
 }
