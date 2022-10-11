@@ -71,7 +71,6 @@ const CreatorsProfiles = () => {
         let randomNumber = Math.floor(Math.random() * profileImages.length);
         let randomImage = profileImages[randomNumber];
         temp.push(randomImage);
-        console.log(temp);
         setProfileImagesPathsState(temp);
       }
     }

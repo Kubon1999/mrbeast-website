@@ -3,6 +3,7 @@ import styled from "styled-components";
 import pink_background_with_thunder from "../../img/pink-bg-with-thunder.png";
 import FooterText from "./FooterText";
 import FooterLeft from "./FooterLeft";
+
 const FooterDiv = styled.div`
   width: 100%;
   height: 30vw;
@@ -19,7 +20,7 @@ const FooterDiv = styled.div`
 const Footer = () => {
   return (
     <>
-      <FooterDiv>
+      <FooterDiv id="contact">
         <FooterLeft />
         <FooterText />
       </FooterDiv>

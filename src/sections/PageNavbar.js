@@ -1,5 +1,7 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
 import styled from "styled-components";
+import { slide as Menu } from "react-burger-menu";
+import { HashLink } from "react-router-hash-link";
 
 const StyledNavBar = styled.ul`
   margin: 1.5vw;
@@ -19,14 +21,34 @@ const StyledNavBarElement = styled.li`
 
 const PageNavbar = () => {
   return (
-    <div className="absolute z-10 right-0 text-white">
-      <StyledNavBar>
-        <StyledNavBarElement>Videos</StyledNavBarElement>
-        <StyledNavBarElement>About</StyledNavBarElement>
-        <StyledNavBarElement>Creators</StyledNavBarElement>
-        <StyledNavBarElement>Contact</StyledNavBarElement>
-      </StyledNavBar>
-    </div>
+    <>
+      <Menu>
+        <a id="home" className="menu-item" href="/">
+          Videos
+        </a>
+        <a id="about" className="menu-item" href="/about">
+          About
+        </a>
+        <a id="contact" className="menu-item" href="/contact">
+          Creators
+        </a>
+        <a className="menu-item--small" href="">
+          Contact
+        </a>
+      </Menu>
+      <div className="absolute z-10 right-0 text-white">
+        <StyledNavBar>
+          <StyledNavBarElement>
+            <a href="#about">Videos</a>
+          </StyledNavBarElement>
+          <StyledNavBarElement>About</StyledNavBarElement>
+          <StyledNavBarElement>Creators</StyledNavBarElement>
+          <StyledNavBarElement>
+            <a href="#contact">Contact</a>
+          </StyledNavBarElement>
+        </StyledNavBar>
+      </div>
+    </>
   );
 };
 

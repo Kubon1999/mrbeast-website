@@ -46,7 +46,7 @@ AboutImageBackground.defaultProps = {
 const About = () => {
   return (
     <>
-      <AboutDiv>
+      <AboutDiv id="about">
         <TextContainer>
           <AboutText></AboutText>
           <div className="relative">
