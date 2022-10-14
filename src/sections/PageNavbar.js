@@ -9,6 +9,10 @@ const StyledNavBar = styled.ul`
   justify-content: flex-end;
   gap: 50%;
   list-style: none;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const StyledNavBarElement = styled.li`
@@ -22,7 +26,7 @@ const StyledNavBarElement = styled.li`
 const PageNavbar = () => {
   return (
     <>
-      <Menu>
+      <Menu className="mobile-burger">
         <a id="home" className="menu-item" href="/">
           Videos
         </a>

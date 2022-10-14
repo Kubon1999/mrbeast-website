@@ -7,6 +7,20 @@ import pink_background_with_thunder from "../img/pink-bg-with-thunder.png";
 import pink_background_with_thunder_looped from "../img/pink-bg-with-thunder-looped.png";
 import TopBannerDetails from "./TopBannerDetails";
 
+const panther = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+        rotate(0deg);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+        transform: rotate(-4.2deg);
+    }
+`;
+
 const MrBeastLogoPanther = styled.img`
   alt: "mrbeast-logo-panther";
   position: absolute;
@@ -15,6 +29,8 @@ const MrBeastLogoPanther = styled.img`
   top: 20%;
   width: 35vw;
   transform: rotate(-4.2deg);
+  animation-name: ${panther};
+  animation-duration: 2s;
 `;
 
 MrBeastLogoPanther.defaultProps = {
