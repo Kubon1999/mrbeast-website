@@ -11,6 +11,11 @@ const AboutDiv = styled.div`
   clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 77%);
   position: relative;
   overflow: hidden;
+
+  /* for mobile */
+  @media (max-width: 768px) {
+    margin-top: 15rem;
+  }
 `;
 
 const TextContainer = styled.div`

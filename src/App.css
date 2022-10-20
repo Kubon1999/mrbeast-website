@@ -38,6 +38,7 @@ li {
 
 .top-section {
   /* transform: rotate(15deg); */
+  /*for mobile */
 }
 
 .header-text{
@@ -57,6 +58,8 @@ li {
 
 .clip-this {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 33%);
+
+  
 }
 
 /* for tablets */
@@ -97,14 +100,14 @@ li {
 .bm-burger-button {
   position: fixed;
   width: 36px;
-  height: 30px;
-  left: 36px;
-  top: 36px;
+  height: 25px;
+  left: 15px;
+  top: 15px;
 }
 
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: #ffffff;
+  background: #45D6FE;
 }
 
 /* Color/shape of burger icon bars on hover*/
@@ -120,7 +123,7 @@ li {
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #000000;
+  background: #45D6FE;
 }
 
 /*
@@ -146,7 +149,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #000000;
+  color: #45D6FE;
   padding: 0.8em;
 }
 
@@ -159,8 +162,16 @@ Note: Beware of modifying this element as it can break the animations - you shou
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
 .mobile-burger, .bm-burger-button{
     display: none;
+  }
+}
+
+/* for mobile */
+@media (max-width: 768px) {
+  .clip-this{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+    background-color: #f7c7d9;
   }
 }

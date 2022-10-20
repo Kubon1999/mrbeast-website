@@ -38,6 +38,14 @@ const Two_stripes_blue_pink_center = styled.img`
   top: 23%;
   width: 67vw;
   transform: rotate(12deg);
+
+  /* for mobile */
+  @media (max-width: 768px) {
+    top: 85%;
+    left: 2%;
+    width: 100vw;
+    transform: scale(2.5) rotate(8deg);
+  }
 `;
 
 Two_stripes_blue_pink_center.defaultProps = {
@@ -58,6 +66,27 @@ const Main_page_text = styled.h1`
   color: #ffffff;
 
   text-shadow: 0.3vw 0.4vw 0px #ff5790;
+
+  /* for mobile */
+  @media (max-width: 768px) {
+    font-size: 9vw;
+    top: 95%;
+    left: 2%;
+    width: 100vw;
+  }
+
+  @media (max-width: 320px) {
+    top: 70%;
+    transform: rotate(15deg);
+  }
+
+  @media (min-width: 321px) and (max-width: 559px) {
+    transform: rotate(8deg);
+  }
+
+  @media (min-width: 560px) {
+    transform: rotate(11deg);
+  }
 `;
 
 const TopBannerDetails = () => {

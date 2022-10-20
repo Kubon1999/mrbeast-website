@@ -31,6 +31,10 @@ const MrBeastLogoPanther = styled.img`
   transform: rotate(-4.2deg);
   animation-name: ${panther};
   animation-duration: 2s;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 MrBeastLogoPanther.defaultProps = {
@@ -44,6 +48,20 @@ const MrBeastTextBigBlue = styled.img`
   bottom: -5%;
   right: 2%;
   transform: rotate(12deg);
+
+  @media (max-width: 320px) {
+    bottom: 0%;
+    transform: rotate(15deg);
+  }
+
+  @media (min-width: 321px) and (max-width: 559px) {
+    bottom: -10%;
+    transform: rotate(8deg);
+  }
+
+  @media (min-width: 560px) {
+    transform: rotate(11deg);
+  }
 `;
 
 MrBeastTextBigBlue.defaultProps = {
@@ -55,6 +73,11 @@ const PinkBackgroundWithThunder = styled.div`
   background-size: cover;
   background-image: url(${pink_background_with_thunder});
   visibility: hidden;
+
+  /* for mobile extend the pink thunder background to the ~1/3 of the height of the deivce */
+  @media (max-width: 768px) {
+    height: 20vh;
+  }
 `;
 
 /* animation for background */
@@ -73,6 +96,11 @@ const PinkBackgroundWithThunderAnimation = styled.img`
   animation-duration: 5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+
+  /* turn off the animation  */
+  @media (max-width: 768px) {
+    animation-name: none;
+  }
 `;
 
 PinkBackgroundWithThunderAnimation.defaultProps = {
