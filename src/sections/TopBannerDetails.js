@@ -38,14 +38,6 @@ const Two_stripes_blue_pink_center = styled.img`
   top: 23%;
   width: 67vw;
   transform: rotate(12deg);
-
-  /* for mobile */
-  @media (max-width: 768px) {
-    top: 85%;
-    left: 2%;
-    width: 100vw;
-    transform: scale(2.5) rotate(8deg);
-  }
 `;
 
 Two_stripes_blue_pink_center.defaultProps = {
@@ -69,34 +61,69 @@ const Main_page_text = styled.h1`
 
   /* for mobile */
   @media (max-width: 768px) {
-    font-size: 9vw;
-    top: 95%;
+    font-size: 8.5vw;
+    top: 35%;
     left: 2%;
     width: 100vw;
   }
 
   @media (max-width: 320px) {
-    top: 70%;
-    transform: rotate(15deg);
+    top: 30%;
+    transform: rotate(9deg);
   }
 
   @media (min-width: 321px) and (max-width: 559px) {
+    top: 31%;
     transform: rotate(8deg);
   }
 
   @media (min-width: 560px) {
-    transform: rotate(11deg);
+    top: 35%;
+    transform: rotate(9deg);
+  }
+`;
+
+const Two_stripes_blue_pink_mobile = styled.img`
+  alt: "two-stripes-blue-pink";
+  position: absolute;
+  z-index: 10;
+  left: -10%;
+  transform: scale(2.5) rotate(8deg);
+
+  /* for desktop */
+  @media (min-width: 769px) {
+    display: none;
+  }
+`;
+
+Two_stripes_blue_pink_mobile.defaultProps = {
+  src: two_stripes_blue_pink,
+};
+
+const Div_for_overflow = styled.div`
+  position: relative;
+  width: 100vw;
+  height: 400px;
+  overflow: hidden;
+
+  /* for desktop */
+  @media (min-width: 769px) {
+    display: none;
   }
 `;
 
 const TopBannerDetails = () => {
   return (
-    <>
+    <div>
       <Two_stripes_blue_pink_left />
       <Two_stripes_blue_pink_center />
+
       <Main_page_text>"YOU CAN'T LOSE IF YOU BREAK THE PRIZE!"</Main_page_text>
+      <Div_for_overflow>
+        <Two_stripes_blue_pink_mobile />
+      </Div_for_overflow>
       <Two_stripes_blue_pink_right />
-    </>
+    </div>
   );
 };
 
