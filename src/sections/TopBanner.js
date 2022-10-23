@@ -49,18 +49,11 @@ const MrBeastTextBigBlue = styled.img`
   right: 2%;
   transform: rotate(12deg);
 
-  @media (max-width: 320px) {
-    bottom: 0%;
-    transform: rotate(15deg);
-  }
-
-  @media (min-width: 321px) and (max-width: 559px) {
-    bottom: -10%;
-    transform: rotate(8deg);
-  }
-
-  @media (min-width: 560px) {
-    transform: rotate(11deg);
+  /* for mobile extend the pink thunder background to the ~1/3 of the height of the deivce */
+  @media (max-width: 768px) {
+    width: 100%;
+    bottom: 3%;
+    transform: rotate(14deg);
   }
 `;
 
@@ -74,15 +67,25 @@ const PinkBackgroundWithThunder = styled.div`
   background-image: url(${pink_background_with_thunder});
   visibility: hidden;
 
-  /* for mobile extend the pink thunder background to the ~1/3 of the height of the deivce */
+  /* for mobile extend the pink thunder background to the ~1/2 of the height of the deivce */
   @media (max-width: 768px) {
-    height: 20vh;
+    height: 80vw;
   }
 `;
 
 /* animation for background */
 const scroll = keyframes`
   100% { transform: translateY(20%); }
+  
+`;
+
+const mobileScroll = keyframes`
+  0%{
+    transform: translateY(0) scale(2);
+  }
+  100% { 
+    transform: translateY(20%) scale(2); 
+  }
   
 `;
 
@@ -99,7 +102,8 @@ const PinkBackgroundWithThunderAnimation = styled.img`
 
   /* turn off the animation  */
   @media (max-width: 768px) {
-    animation-name: none;
+    animation-name: ${mobileScroll};
+    top: -15%;
   }
 `;
 
