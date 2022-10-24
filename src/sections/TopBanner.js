@@ -53,7 +53,7 @@ const MrBeastTextBigBlue = styled.img`
   @media (max-width: 768px) {
     width: 100%;
     bottom: 3%;
-    transform: rotate(14deg);
+    transform: rotate(14deg) scale(1.25);
   }
 `;
 
