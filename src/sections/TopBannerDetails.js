@@ -13,7 +13,7 @@ const Two_stripes_blue_pink_left = styled.img`
 
   /* for mobile */
   @media (max-width: 768px) {
-    top: 32%;
+    top: 45%;
     transform: scale(2) rotate(193deg);
   }
 `;
@@ -33,7 +33,7 @@ const Two_stripes_blue_pink_right = styled.img`
 
   /* for mobile */
   @media (max-width: 768px) {
-    top: 47%;
+    top: 65%;
     transform: scale(2) rotate(193deg);
   }
 `;
@@ -53,7 +53,7 @@ const Two_stripes_blue_pink_center = styled.img`
 
   /* for mobile */
   @media (max-width: 768px) {
-    top: 55%;
+    top: 75%;
     transform: scale(1) rotate(193deg);
   }
 `;
@@ -106,7 +106,7 @@ const Main_page_text_mobile = styled.h1`
   position: absolute;
   z-index: 11;
   left: 2%;
-  top: 13%;
+  top: 22%;
   width: 100vw;
   transform: rotate(14deg);
 
@@ -125,9 +125,9 @@ const Main_page_text_mobile = styled.h1`
 const Div_for_overflow = styled.div`
   position: relative;
   width: 100vw;
-  height: 400px;
+  height: 59vw;
   overflow: hidden;
-  margin-top: -95px;
+  margin-top: -25vw;
 
   /* for desktop */
   @media (min-width: 769px) {
