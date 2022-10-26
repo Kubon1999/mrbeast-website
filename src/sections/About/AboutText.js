@@ -13,6 +13,11 @@ const Header = styled.h1`
   font-family: Inter Extra Bold;
   margin-top: 1vw;
   margin-bottom: 1vw;
+
+  /* for mobile flex direction should be column-reverse so that the person is first */
+  @media (max-width: 768px) {
+    font-size: 7vw;
+  }
 `;
 
 const Description = styled.h2`
@@ -31,6 +36,10 @@ const TextHighlighted = styled.p`
 
 const StyledDiv = styled.div`
   padding-left: 10vw;
+  /* for mobile flex direction should be column-reverse so that the person is first */
+  @media (max-width: 768px) {
+    padding-left: 5vw;
+  }
 `;
 
 const AboutText = () => {
@@ -39,7 +48,8 @@ const AboutText = () => {
       <SmallText> Who is he? </SmallText>
       <Header>
         {" "}
-        Jimmy Donaldson (born May 7, 1998),<br></br> better known as MrBeast,{" "}
+        Jimmy Donaldson<br></br> (born May 7, 1998),<br></br> better known as
+        MrBeast,{" "}
       </Header>
       <Description>
         is an American YouTube personality, entrepreneur, <br></br> and

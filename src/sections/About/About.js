@@ -20,26 +20,32 @@ const TextContainer = styled.div`
   padding-top: 20vw;
   z-index: 10;
   position: relative;
+
+  /* for mobile flex direction should be column-reverse so that the person is first */
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding-top: 13vw;
+  }
 `;
 
-const AboutImage = styled.img`
+const AboutPersonPhoto = styled.img`
   position: relative;
   width: 38vw;
   padding-top: 10vw;
   z-index: 20;
 `;
 
-AboutImage.defaultProps = {
+AboutPersonPhoto.defaultProps = {
   src: mrbeast_profile,
 };
 
-const AboutImageBackground = styled.img`
+const AboutPersonPhotoBackgroundImage = styled.img`
   position: absolute;
   padding-top: 10vw;
   width: 38vw;
 `;
 
-AboutImageBackground.defaultProps = {
+AboutPersonPhotoBackgroundImage.defaultProps = {
   src: mrbeast_text_bg,
 };
 
@@ -50,8 +56,8 @@ const About = () => {
         <TextContainer>
           <AboutText></AboutText>
           <div className="relative">
-            <AboutImageBackground></AboutImageBackground>
-            <AboutImage></AboutImage>
+            <AboutPersonPhotoBackgroundImage></AboutPersonPhotoBackgroundImage>
+            <AboutPersonPhoto></AboutPersonPhoto>
           </div>
         </TextContainer>
         <AboutDetails></AboutDetails>
