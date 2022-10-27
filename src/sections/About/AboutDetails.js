@@ -21,6 +21,12 @@ const Two_stripes_blue_pink_1 = styled.img`
       left: 100%;
     }
   }
+
+  @media (max-width: 768px) {
+    width: 30vw;
+    top: 45%;
+    animation: moveRight 20s linear infinite;
+  }
 `;
 
 Two_stripes_blue_pink_1.defaultProps = {
@@ -41,12 +47,17 @@ const Two_stripes_blue_pink_2 = styled.img`
 
   @keyframes moveRight {
     0% {
-      left: -10%;
+      left: -100%;
     }
 
     100% {
       left: 100%;
     }
+  }
+
+  @media (max-width: 768px) {
+    width: 70vw;
+    animation: moveRight 30s linear infinite;
   }
 `;
 
@@ -76,6 +87,7 @@ const Two_stripes_blue_pink_3 = styled.img`
       transform: right:100%;
     }
   }
+
 `;
 
 Two_stripes_blue_pink_3.defaultProps = {

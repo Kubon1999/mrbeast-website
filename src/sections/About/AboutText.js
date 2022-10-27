@@ -5,6 +5,10 @@ const SmallText = styled.p`
   color: white;
   font-size: 1.3vw;
   font-family: Inter Light;
+
+  @media (max-width: 768px) {
+    font-size: 5vw;
+  }
 `;
 
 const Header = styled.h1`
@@ -14,7 +18,6 @@ const Header = styled.h1`
   margin-top: 1vw;
   margin-bottom: 1vw;
 
-  /* for mobile flex direction should be column-reverse so that the person is first */
   @media (max-width: 768px) {
     font-size: 7vw;
   }
@@ -24,6 +27,23 @@ const Description = styled.h2`
   color: white;
   font-size: 1.7vw;
   font-family: Inter Light;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+`;
+
+const DescriptionMobile = styled.h2`
+  color: white;
+  font-size: 1.7vw;
+  font-family: Inter Light;
+
+  @media (max-width: 768px) {
+    font-size: 4vw;
+  }
+  @media (min-width: 769px) {
+    display: none;
+  }
 `;
 
 const TextBolded = styled.p`
@@ -58,6 +78,13 @@ const AboutText = () => {
         YouTube channel, <br></br>
         "MrBeast", is the fifth-most-subscribed on the platform.
       </Description>
+
+      <DescriptionMobile>
+        is an American YouTube personality, entrepreneur, and philanthropist. He
+        has been credited with pioneering a genre of YouTube videos that centers
+        on expensive stunts.<br></br> His main YouTube channel, "MrBeast",
+        <br></br> is the fifth-most-subscribed on the platform.
+      </DescriptionMobile>
     </StyledDiv>
   );
 };
