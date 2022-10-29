@@ -176,4 +176,9 @@ Note: Beware of modifying this element as it can break the animations - you shou
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
     background-color: #f7c7d9;
   }
+
+  .creator-profile{
+    animation-delay: calc(var(--i) * 0.04s);
+  }
+  
 }

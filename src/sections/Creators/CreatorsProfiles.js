@@ -59,12 +59,23 @@ const CreatorsProfiles = () => {
     "/img/creators/zhc.jpeg",
   ];
 
-  const rows = 4;
-  const columns = 22;
-
   const [profileImagesPathsState, setProfileImagesPathsState] = useState();
 
   useEffect(() => {
+    let rows = 4;
+    let columns = 22;
+
+    function myFunction(x) {
+      if (x.matches) {
+        // If media query matches - mobile view
+        rows = 4;
+        columns = 9;
+      }
+    }
+
+    var x = window.matchMedia("(max-width: 768px)");
+    myFunction(x); // Call listener function at run time
+
     let temp = [];
     for (let i = 0; i < rows; i++) {
       for (let i = 0; i < columns; i++) {

@@ -8,6 +8,10 @@ const CreatorsDiv = styled.div`
   text-align: center;
   height: 40vw;
   position: relative;
+
+  @media (max-width: 768px) {
+    height: 80vw;
+  }
 `;
 
 const About = () => {

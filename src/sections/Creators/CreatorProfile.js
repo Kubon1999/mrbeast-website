@@ -7,6 +7,10 @@ const CreatorImage = styled.img`
   width: 3.4vw;
   margin: 0.5vw;
   border-radius: 50%;
+
+  @media (max-width: 768px) {
+    width: 10vw;
+  }
 `;
 
 const CreatorProfile = ({ img, id }) => {

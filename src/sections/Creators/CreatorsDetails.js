@@ -12,6 +12,11 @@ const Fade_out_left = styled.img`
   left: 0%;
   top: 6%;
   width: 50vw;
+
+  @media (max-width: 768px) {
+    transform: scaleY(2.1);
+    top: 30%;
+  }
 `;
 
 Fade_out_left.defaultProps = {
@@ -26,6 +31,11 @@ const Fade_out_right = styled.img`
   top: 6%;
   width: 50vw;
   transform: scale(-1);
+
+  @media (max-width: 768px) {
+    transform: scale(-1) scaleY(2.1);
+    top: 30%;
+  }
 `;
 
 Fade_out_right.defaultProps = {
@@ -40,6 +50,11 @@ const Two_stripes_blue_pink_1 = styled.img`
   bottom: 0%;
   width: 25vw;
   transform: rotate(20deg);
+
+  @media (max-width: 768px) {
+    left: -20%;
+    width: 50vw;
+  }
 `;
 
 Two_stripes_blue_pink_1.defaultProps = {
@@ -54,6 +69,12 @@ const Two_stripes_from_right_to_center = styled.img`
   top: 0%;
   width: 55vw;
   transform: scaleX(1);
+
+  @media (max-width: 768px) {
+    width: 80vw;
+    top: 10%;
+    right: -20%;
+  }
 `;
 
 Two_stripes_from_right_to_center.defaultProps = {
@@ -67,6 +88,12 @@ const Yt_button = styled.img`
   left: 47%;
   top: 45%;
   width: 10vw;
+
+  @media (max-width: 768px) {
+    width: 20vw;
+    top: 52%;
+    left: 40%;
+  }
 `;
 
 Yt_button.defaultProps = {

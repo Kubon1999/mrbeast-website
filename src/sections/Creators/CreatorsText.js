@@ -10,6 +10,10 @@ const Header = styled.h1`
   text-align: left;
   position: relative;
   z-index: 11;
+
+  @media (max-width: 768px) {
+    font-size: 7vw;
+  }
 `;
 
 const TextHighlighted = styled.h1`
@@ -22,6 +26,11 @@ const TextHighlighted = styled.h1`
   position: absolute;
   bottom: 0%;
   right: -12%;
+
+  @media (max-width: 768px) {
+    font-size: 7vw;
+    right: 7%;
+  }
 `;
 
 const CreatorsText = () => {
