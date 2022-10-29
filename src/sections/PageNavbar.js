@@ -5,9 +5,10 @@ import { HashLink } from "react-router-hash-link";
 
 const StyledNavBar = styled.ul`
   margin: 1.5vw;
+  margin-right: 5vw;
   display: flex;
   justify-content: flex-end;
-  gap: 50%;
+  gap: 8vw;
   list-style: none;
 
   @media (max-width: 768px) {
