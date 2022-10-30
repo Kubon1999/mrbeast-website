@@ -25,6 +25,10 @@ const FooterProfileContainer = styled.div`
 const FooterProfilePhoto = styled.img`
   width: 7vw;
   border-radius: 50%;
+
+  @media (max-width: 768px) {
+    width: 20vw;
+  }
 `;
 
 FooterProfilePhoto.defaultProps = {
@@ -33,12 +37,20 @@ FooterProfilePhoto.defaultProps = {
 
 const FooterIcon = styled.img`
   width: 3.2vw;
+
+  @media (max-width: 768px) {
+    width: 7vw;
+  }
 `;
 
 const FooterLeftText = styled.p`
   color: white;
   font-family: "Inter Light";
   font-size: 1vw;
+
+  @media (max-width: 768px) {
+    font-size: 3vw;
+  }
 `;
 
 const Footer = () => {

@@ -3,17 +3,28 @@ import styled from "styled-components";
 
 const TextContainer = styled.div`
   display: flex;
-  wrap: no-wrap;
+  flex-wrap: no-wrap;
   flex-direction: row;
   justify-content: end;
   align-content: flex-end;
   padding-bottom: 2vw;
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: start;
+    align-content: start;
+    align-items: flex-start;
+  }
 `;
 
 const Title = styled.h3`
   color: white;
   font-size: 1vw;
   font-family: Inter Light;
+
+  @media (max-width: 768px) {
+    font-size: 5vw;
+  }
 `;
 
 const Link = styled.p`
@@ -21,6 +32,10 @@ const Link = styled.p`
   font-size: 1vw;
   font-family: Inter Light;
   opacity: 0.7;
+
+  @media (max-width: 768px) {
+    font-size: 3vw;
+  }
 `;
 
 const Column = styled.div`
@@ -29,6 +44,11 @@ const Column = styled.div`
   justify-content: end;
   width: 10vw;
   gap: 3%;
+
+  @media (max-width: 768px) {
+    width: 25vw;
+    flex-basis: 50%;
+  }
 `;
 
 const CreatorsText = () => {

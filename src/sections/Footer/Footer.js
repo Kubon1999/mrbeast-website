@@ -15,6 +15,17 @@ const FooterDiv = styled.div`
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+
+  @media (max-width: 768px) {
+    height: 140vw;
+    clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
+    flex-direction: column;
+    padding-top: 40vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    background-repeat: repeat;
+    background-size: contain;
+  }
 `;
 
 const Footer = () => {
