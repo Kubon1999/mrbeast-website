@@ -61,9 +61,7 @@ const Footer = () => {
         <FooterLeftText>
           Website created by Hansu, for the purpose of this video.<br></br>It is
           not assosiated with MrBeast Company -<br></br> page created as a
-          fanpage.<br></br>
-          <br></br>
-          The links in the footer are not working. It is just an example.
+          fanpage.
         </FooterLeftText>
       </FooterProfileContainer>
       <FooterProfileContainer>
