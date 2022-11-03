@@ -31,7 +31,7 @@ const FooterDiv = styled.div`
 const Footer = () => {
   return (
     <>
-      <FooterDiv id="contact">
+      <FooterDiv id="contact-footer">
         <FooterLeft />
         <FooterText />
       </FooterDiv>

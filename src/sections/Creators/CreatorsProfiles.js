@@ -60,21 +60,17 @@ const CreatorsProfiles = () => {
   ];
 
   const [profileImagesPathsState, setProfileImagesPathsState] = useState();
+  const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     let rows = 4;
     let columns = 22;
 
-    function myFunction(x) {
-      if (x.matches) {
-        // If media query matches - mobile view
-        rows = 4;
-        columns = 9;
-      }
+    if (width < 768) {
+      // If media query matches - mobile view
+      rows = 4;
+      columns = 9;
     }
-
-    var x = window.matchMedia("(max-width: 768px)");
-    myFunction(x); // Call listener function at run time
 
     let temp = [];
     for (let i = 0; i < rows; i++) {
@@ -85,7 +81,17 @@ const CreatorsProfiles = () => {
         setProfileImagesPathsState(temp);
       }
     }
-  }, []);
+
+    //check if the window resizes to mobile view
+    window.addEventListener("resize", () => {
+      setWidth(window.innerWidth);
+    });
+    return () => {
+      window.removeEventListener("resize", () => {
+        setWidth(window.innerWidth);
+      });
+    };
+  }, [width]);
 
   return (
     <CreatorsContainer>

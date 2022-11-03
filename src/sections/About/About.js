@@ -68,8 +68,8 @@ AboutPersonPhotoBackgroundImage.defaultProps = {
 
 const About = () => {
   return (
-    <>
-      <AboutDiv id="about">
+    <div id="about-section">
+      <AboutDiv>
         <TextContainer>
           <AboutText></AboutText>
           <div className="relative">
@@ -79,7 +79,7 @@ const About = () => {
         </TextContainer>
         <AboutDetails></AboutDetails>
       </AboutDiv>
-    </>
+    </div>
   );
 };
 

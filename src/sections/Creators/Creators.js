@@ -17,7 +17,7 @@ const CreatorsDiv = styled.div`
 const About = () => {
   return (
     <>
-      <CreatorsDiv>
+      <CreatorsDiv id="creators-section">
         <CreatorsText></CreatorsText>
         <CreatorsDetails></CreatorsDetails>
         <CreatorsProfiles></CreatorsProfiles>
